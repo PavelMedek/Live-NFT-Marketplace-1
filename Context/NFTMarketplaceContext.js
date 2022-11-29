@@ -7,13 +7,12 @@ import { create as ipfsHttpClient } from "ipfs-http-client";
 
 // const client = ipfsHttpClient("https://ipfs.infura.io:5001/api/v0");
 
-const projectId = process.env.PROJECT_ID;
-const projectSecretKey = process.env.PROJECT_SECRET_KEY;
+const projectId = "2I0beqZOIhuvZqoj7hiFXjr6eEk";
+const projectSecretKey = "4f705877996630b38f829d447b7f4df6";
 const auth = `Basic ${Buffer.from(`${projectId}:${projectSecretKey}`).toString(
   "base64"
 )}`;
-
-const subdomain = process.env.SUBDOMAIN;
+const subdomain = "https://pavel-medek-nft.infura-ipfs.io";
 
 const client = ipfsHttpClient({
   host: "infura-ipfs.io",
