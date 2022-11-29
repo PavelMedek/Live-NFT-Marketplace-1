@@ -8,8 +8,9 @@ module.exports = {
 
     polygon_mumbai: {
       // chainId: 80001,
-      url: process.env.POLYGON_MUMBAI,
-      accounts: [`0x${process.env.PRIVATE_KEY}`],
-    },
+      url: "https://polygon-mumbai.g.alchemy.com/v2/wL1maDWm41DH9mKb0zgKyDNSzykduI4T",
+      accounts: [
+        `fb80d9e3bf654405fce8b28c7b6eb8ba8708efe3d5057e8dceb5fb525f7a4d4c`,
+      ],
   },
 };
